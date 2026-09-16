@@ -5,7 +5,9 @@
 
 ## What is wired up
 
-`vercel.json` now 301-redirects every request to the canonical host:
+Redirects are configured in the Vercel dashboard (Project → Settings → Domains), not in
+`vercel.json`, which only sets security headers and `trailingSlash`. Each non-canonical domain is set to
+**Redirect to `collectrefund.com`** with a 308:
 
 | Request | Goes to |
 |---|---|
